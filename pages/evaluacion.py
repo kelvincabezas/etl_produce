@@ -17,7 +17,6 @@ from sklearn.model_selection import train_test_split, cross_val_score, GridSearc
 from sklearn.metrics import mean_squared_error, r2_score, confusion_matrix, accuracy_score, f1_score
 # Gráficos
 import plotly.express as px
-import seaborn as sns
 import matplotlib.pyplot as plt
 import requests  # Para hacer solicitudes a la API
 
