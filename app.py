@@ -41,6 +41,9 @@ page = st_navbar(
     options=options,
 )
 
+if page not in pages:
+    page = "Inicio"
+
 functions = {
     "Inicio": pg.show_inicio,
     "Carga": pg.show_carga,
@@ -49,6 +52,7 @@ functions = {
     "Evaluacion": pg.show_evaluacion,
     "Modelo": pg.show_modelo,
 }
+
 go_to = functions.get(page)
 if go_to:
     go_to()
